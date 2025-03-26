@@ -43,9 +43,7 @@ ifneq (,$(filter adreno, $(TARGET_COMMON_QTI_COMPONENTS)))
     TARGET_ADRENO_COMPONENT_VARIANT ?= adreno-t
   else ifeq ($(call is-board-platform-in-list,$(5_10_FAMILY)),true)
     TARGET_ADRENO_COMPONENT_VARIANT ?= adreno-s
-  else ifeq ($(call is-board-platform-in-list,$(4_14_FAMILY)),true)
-    TARGET_ADRENO_COMPONENT_VARIANT ?= adreno-msmnile
-  else ifeq ($(call is-board-platform-in-list,$(4_19_FAMILY) $(5_4_FAMILY)),true)
+  else ifeq ($(call is-board-platform-in-list,$(4_14_FAMILY) $(4_19_FAMILY) $(5_4_FAMILY)),true)
     TARGET_ADRENO_COMPONENT_VARIANT ?= adreno-r
   else ifeq ($(call is-board-platform-in-list,$(3_18_FAMILY) $(4_4_FAMILY) msm8953),true)
     TARGET_ADRENO_COMPONENT_VARIANT ?= adreno-5xx
