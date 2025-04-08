@@ -42,6 +42,10 @@ PRODUCT_PACKAGES += \
     libavservices_minijail.vendor \
     libpsi.vendor \
     libtflite \
+    vendor.qti.hardware.perf@2.0.vendor \
+    vendor.qti.hardware.perf@2.1.vendor \
+    vendor.qti.hardware.perf@2.2.vendor \
+    vendor.qti.hardware.perf@2.3.vendor \
     vendor.qti.hardware.servicetracker@1.1.vendor \
     vendor.qti.hardware.servicetrackeraidl-V1-ndk.vendor
 
