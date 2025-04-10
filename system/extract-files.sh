@@ -97,7 +97,7 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             "${PATCHELF}" --replace-needed "android.hardware.common-V2-ndk_platform.so" "android.hardware.common-V2-ndk.so" "${2}"
             ;;
-        system_ext/bin/wfdservice64)
+        system_ext/bin/wfdservice64 | system_ext/bin/wfdservice)
             [ "$2" = "" ] && return 0
             grep -q "libwfdservice_shim.so" "${2}" || "${PATCHELF}" --add-needed "libwfdservice_shim.so" "${2}"
             ;;
